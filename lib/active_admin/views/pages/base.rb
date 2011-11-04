@@ -30,6 +30,7 @@ module ActiveAdmin
               script :src => javascript_path(path), :type => "text/javascript"
             end
             text_node csrf_meta_tag
+            text_node content_for( :head )
           end
         end
 
